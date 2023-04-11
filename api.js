@@ -15,10 +15,13 @@ const validateAbsolute = (userPath) => {
     return path.resolve(userPath)}
 };
 
+// console.log('aca convierte******', validateAbsolute('dataPrueba\readmePrueba.md'))
+
 // console.log(validateAbsolute("Usersfff\maria\OneDrive\Escritorio\programar\github\DEV003-md-links\dataPrueba\first.txt"))
 const validateDiR = (userPath) => fs.statSync(userPath).isDirectory()// validar si el path es directorio/carpeta
 const validateFile = (userPath) => fs.statSync(userPath).isFile() //validar si es un archivo
 const infoFile = (userPath) => fs.readFileSync(userPath, 'UTF-8') // lee lo que hay en el archivo
+
 const extentionFiles = (userPath) => path.extname(userPath) //extraer la extension de los archivos
 // console.log('extentionFiles: ', extentionFiles('README.md'));
 
@@ -44,11 +47,11 @@ const getLinks =  (userPath) => {
         }
         
 
-    // console.log("linksObj", linksObj)
+    console.log("linksObj", linksObj)
     return linksObj
     }
 
-getLinks('./dataPrueba/readmePrueba.md')
+// getLinks('./dataPrueba/readmePrueba.md')
 // getLinks('README.md')
 
 const getLinksStatus = (linksObj) => {
@@ -119,6 +122,7 @@ function mdFiles(filePath) {
     //si cumple, leer la informacion y extraer los links
     // guardarlos en un array 
 
+   
 
 module.exports= {
     validatePath,
@@ -129,7 +133,7 @@ module.exports= {
     extentionFiles,
     getLinks,
     getLinksStatus, 
-    mdFiles,
+    mdFiles, 
 }
 
 

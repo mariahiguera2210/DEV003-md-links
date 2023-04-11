@@ -9,10 +9,33 @@
     "version": "5.5.0",
     "commit": "a63a770ea33332882790401851df337734b0b734"
   },
+  "description": "library in charge of reading and parsing files in Markdown Format",
+  "main": "./cli.js",
+  "directories": {
+    "test": "test"
+  },
+
+  "author": "Maria Higuera", 
+  "license": "ISC",
+  "bin": {
+    "start-md-Links" : "./cli.js" 
+  },
+
   "dependencies": {
+    "colors": "^1.4.0",
     "eslint": "^8.35.0",
     "fs": "^0.0.1-security",
     "jest": "^29.5.0"
+  },
+  "keywords": [
+    "node.js",
+    "http",
+    "mdlinks",
+    "Markdown"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariahiguera2210/DEV003-md-links"
   },
   "scripts": {
     "eslint": "eslint --ext .js test/",
