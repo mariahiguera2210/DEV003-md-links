@@ -31,21 +31,23 @@ const mdLinks = (userPath, options) => {
 
       } 
     } ) 
-    .catch((Error) => {
-      console.log(Error)
-    })
+    .catch((Error) => { Error })
   
   }
   
 
-mdLinks('C:/Users/maria/OneDrive/Escritorio/programar/github/DEV003-md-links/README.md', {validate: false}).then((resolve) => {
-  console.log(resolve);
+// mdLinks('C:/Users/maria/OneDrive/Escritorio/programar/github/DEV003-md-links/dataPrueba/readmePrueba.md', {validate: true}).then((resolve) => {
+//   console.log(resolve);
 
-})
-  .catch((Error) => {
-    console.log(Error)
-  })
+// })
+//   .catch((Error) => {
+//     console.log(Error)
+//   })
 
+
+  module.exports = {
+    mdLinks
+  }
 
 
 
