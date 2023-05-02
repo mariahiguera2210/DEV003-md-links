@@ -1,6 +1,6 @@
 {
   "name": "md-maria-links",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "engines": {
     "node": ">=16.x"
   },
@@ -14,13 +14,11 @@
   "directories": {
     "test": "test"
   },
-
-  "author": "Maria Higuera", 
+  "author": "Maria Higuera",
   "license": "ISC",
   "bin": {
-    "start-md-Links" : "./cli.js" 
+    "start-md-Links": "./cli.js"
   },
-
   "dependencies": {
     "colors": "^1.4.0",
     "eslint": "^8.35.0",
