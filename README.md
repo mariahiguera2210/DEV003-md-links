@@ -4,7 +4,7 @@
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-instalación)
+* [3. Instalación](#3-instalación)
 * [4. Comandos](#4-comandos)
 
 
