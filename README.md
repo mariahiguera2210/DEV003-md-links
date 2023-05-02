@@ -39,8 +39,6 @@ Esta biblioteca es útil para verificar si algunos de nuestros enlaces están re
 
 ## 4. Comandos
 
-En la terminal se ejecuta el comando 
-
 Para empezar a validar el path se inicia de la siguiente manera:
 
 #### `start-md-Links <path> `
