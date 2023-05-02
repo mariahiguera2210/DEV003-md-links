@@ -47,7 +47,7 @@ const getLinks =  (userPath) => {
         }
         
 
-    console.log("linksObj", linksObj)
+    // console.log("linksObj", linksObj)
     return linksObj
     }
 

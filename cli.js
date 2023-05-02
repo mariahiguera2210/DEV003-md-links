@@ -16,32 +16,15 @@ function cli(){
     const stats = args.includes('--stats') || args.includes('--s')
     const help = args.includes('--help') || args.includes('--h')
 
-    if (path === undefined || path === '--help'|| path === '--h'){
+    if (!path || help){
 
         console.log(('\n-------------------------------- WELCOME ------------------------------------------------------------- '.green.bold));
         console.log("\nInstructions\n".white.bold);
         console.log('1. '+ 'Insert a path right after'+ ' start-md-links'.blue)
-        console.log('2. ' + 'to validate paths status type' + '--validate'.blue)
-        console.log('3. ' + 'to validate statistics type after your path ' + '--stats'.blue)
-        console.log('4. ' + 'to see broken links number type after your path ' + ' --stats --validate'.blue)
-        console.log('5. ' + 'to see again the instructions type ' + '--help'.blue)
-
-        console.log(('\n-------------------------------------------------------------------------------------------------------------- '.green));
-    
-
-        process.exit(0);
-
-    }
-
-    else if (path + '--help' || path + '--h') {
-
-        console.log(('\n-------------------------------- WELCOME ------------------------------------------------------------- '.green.bold));
-        console.log("\nInstructions\n".white.bold);
-        console.log('1. '+ 'Insert a path right after'+ ' start-md-links'.blue)
-        console.log('2. ' + 'to validate paths status type' + '--validate'.blue)
-        console.log('3. ' + 'to validate statistics type after your path ' + '--stats'.blue)
-        console.log('4. ' + 'to see broken links number type after your path ' + ' --stats --validate'.blue)
-        console.log('5. ' + 'to see again the instructions type ' + '--help'.blue)
+        console.log('2. ' + 'to validate paths status type' + '--validate' + ' or '.white + '--v'.blue)
+        console.log('3. ' + 'to validate statistics type after your path ' + '--stats'.blue + ' or '.white + '--s'.blue)
+        console.log('4. ' + 'to see broken links number type after your path ' + ' --stats --validate'.blue + ' or '.white + '--s --v'.blue)
+        console.log('5. ' + 'to see again the instructions type ' + '--help'.blue + ' or '.white + '--h'.blue)
 
         console.log(('\n-------------------------------------------------------------------------------------------------------------- '.green));
     
