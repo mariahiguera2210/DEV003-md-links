@@ -35,7 +35,7 @@ Esta biblioteca es útil para verificar si algunos de nuestros enlaces están re
 
 ## 3. Instalación
 
-
+#### `npm i md-maria-links`
 
 ## 4. Comandos
 
