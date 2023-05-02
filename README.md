@@ -41,11 +41,9 @@ Esta biblioteca es útil para verificar si algunos de nuestros enlaces están re
 
 En la terminal se ejecuta el comando 
 
-start-md-Links
-
 Para empezar a validar el path se inicia de la siguiente manera:
 
-#### `start-md-Links <path-to-file> `
+#### `start-md-Links <path> `
 
 ### Menú de ayuda
 
@@ -59,16 +57,16 @@ Al incertar la ruta a validar: `start-md-Links ./path-a-evaluar.md` nos mostrar�
 
 ![path](./img/path.png)
 
-Al ingresar el comando `start-md-Links --validate` o `start-md-Links --v ` se validará si el link funciona o no, como se muestra a continuación:
+Al ingresar el comando `start-md-Links <path> --validate` o `start-md-Links <path> --v ` se validará si el link funciona o no, como se muestra a continuación:
 
 ![validate](./img/path--v.png)
 
 
-Con la opción `start-md-Links --stats` o `start-md-Links --s` obtendremos las estadísticas básicas sobre los links, como el número total de links y links únicos
+Con la opción `start-md-Links --stats` o `start-md-Links <path>  --s` obtendremos las estadísticas básicas sobre los links, como el número total de links y links únicos
 
 ![stats](./img/path--s.png)
 
-Por último la opción combinada de `start-md-Links --stats --validate` o `start-md-Links --s --v` Obtendrás las estadísticas de los enlaces rotos
+Por último la opción combinada de `start-md-Links <path>  --stats --validate` o `start-md-Links <path>  --s --v` Obtendrás las estadísticas de los enlaces rotos
 
 ![stats y validate](./img/path--s--v.png)
 
